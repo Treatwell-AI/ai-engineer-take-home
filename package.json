@@ -1,0 +1,26 @@
+{
+  "name": "venue-backoffice",
+  "private": true,
+  "packageManager": "yarn@4.18.1",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "yarn workspaces foreach --all --parallel --interlaced run dev",
+    "test": "yarn workspace @venue/api test",
+    "verify": "node scripts/verify.mjs",
+    "db:generate": "yarn workspace @venue/api db:generate",
+    "db:migrate": "yarn workspace @venue/api db:migrate",
+    "db:seed": "yarn workspace @venue/api db:seed"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "eslint": "^9.39.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "jscpd": "^4.0.5",
+    "knip": "^5.88.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.71.0"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules
+.yarn/*
+!.yarn/releases
+.next
+dist
+coverage
+apps/api/data
+*.db
+*.db-journal
+.env.local
+.DS_Store
+*.tsbuildinfo

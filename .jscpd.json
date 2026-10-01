@@ -1,0 +1,11 @@
+{
+  "path": ["apps/api/src", "apps/web/app"],
+  "format": ["typescript", "tsx"],
+  "minLines": 8,
+  "minTokens": 70,
+  "threshold": 2,
+  "ignore": ["**/node_modules/**", "**/.next/**", "**/drizzle/**"],
+  "reporters": ["console"],
+  "gitignore": true,
+  "silent": false
+}
